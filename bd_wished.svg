@@ -1,0 +1,133 @@
+
+<svg class="birthday-cake-svg" viewBox="0 0 320 300" role="img" aria-labelledby="cake-title cake-description" xmlns="http://www.w3.org/2000/svg">
+  <title id="cake-title">A birthday cake for Ei Myat Lay</title>
+  <desc id="cake-description">
+    A pink birthday cake with three glowing candles and tiny hearts.
+  </desc>
+
+  <defs>
+    <linearGradient id="cakeBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e98eae"></stop>
+      <stop offset="50%" stop-color="#f7c2d5"></stop>
+      <stop offset="100%" stop-color="#e78eae"></stop>
+    </linearGradient>
+
+    <linearGradient id="frosting" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4f8"></stop>
+      <stop offset="100%" stop-color="#ffd8e6"></stop>
+    </linearGradient>
+
+    <radialGradient id="flameGlow">
+      <stop offset="0%" stop-color="#ffe8a0" stop-opacity=".9"></stop>
+      <stop offset="100%" stop-color="#ffb64f" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <filter id="cakeShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#bd668b" flood-opacity=".18"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Soft background glow -->
+  <ellipse cx="160" cy="160" rx="120" ry="112" fill="#f8dce9" opacity=".45"></ellipse>
+
+  <!-- Floating sparkles -->
+  <g fill="#d58aaa">
+    <path d="M48 115 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"></path>
+    <path d="M270 92 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"></path>
+    <path d="M265 205 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"></path>
+  </g>
+
+  <!-- Candle glow -->
+  <g>
+    <circle cx="112" cy="70" r="24" fill="url(#flameGlow)"></circle>
+    <circle cx="160" cy="59" r="27" fill="url(#flameGlow)"></circle>
+    <circle cx="208" cy="70" r="24" fill="url(#flameGlow)"></circle>
+  </g>
+
+  <!-- Candles -->
+  <g stroke-linecap="round">
+    <rect x="104" y="68" width="16" height="59" rx="5" fill="#fff8fa" stroke="#e8a0bb" stroke-width="1.5"></rect>
+    <path d="M106 84 l12 -9 M106 103 l12 -9" stroke="#e88bad" stroke-width="4"></path>
+
+    <rect x="152" y="57" width="16" height="70" rx="5" fill="#fff8fa" stroke="#e8a0bb" stroke-width="1.5"></rect>
+    <path d="M154 75 l12 -9 M154 94 l12 -9 M154 113 l12 -9" stroke="#e88bad" stroke-width="4"></path>
+
+    <rect x="200" y="68" width="16" height="59" rx="5" fill="#fff8fa" stroke="#e8a0bb" stroke-width="1.5"></rect>
+    <path d="M202 84 l12 -9 M202 103 l12 -9" stroke="#e88bad" stroke-width="4"></path>
+
+    <path d="M112 68 v-8 M160 57 v-8 M208 68 v-8" stroke="#87616e" stroke-width="2"></path>
+  </g>
+
+  <!-- Animated flames -->
+  <g class="cake-flames">
+    <path d="M112 59 C95 47 109 32 114 25
+             C115 37 128 42 121 53
+             Q118 59 112 59Z" fill="#ffb34d"></path>
+    <path d="M160 48 C141 34 157 18 163 10
+             C163 23 178 31 169 43
+             Q165 48 160 48Z" fill="#ffb34d"></path>
+    <path d="M208 59 C191 47 205 32 210 25
+             C211 37 224 42 217 53
+             Q214 59 208 59Z" fill="#ffb34d"></path>
+
+    <path d="M113 53 Q107 45 115 36 Q119 46 113 53Z" fill="#fff4b7"></path>
+    <path d="M161 42 Q155 32 164 22 Q169 34 161 42Z" fill="#fff4b7"></path>
+    <path d="M209 53 Q203 45 211 36 Q215 46 209 53Z" fill="#fff4b7"></path>
+  </g>
+
+  <!-- Top layer -->
+  <g filter="url(#cakeShadow)">
+    <ellipse cx="160" cy="130" rx="104" ry="29" fill="#e9a0bb"></ellipse>
+    <path d="M56 130
+             C56 115 102 102 160 102
+             C218 102 264 115 264 130
+             L264 169
+             C264 185 217 198 160 198
+             C103 198 56 185 56 169Z" fill="url(#cakeBody)"></path>
+    <ellipse cx="160" cy="130" rx="104" ry="29" fill="url(#frosting)"></ellipse>
+
+    <!-- Frosting drips -->
+    <path d="M66 128
+             Q78 136 89 129
+             Q100 122 110 132
+             Q122 144 134 131
+             Q146 120 158 132
+             Q171 144 184 131
+             Q197 121 209 132
+             Q222 144 234 131
+             Q246 123 255 129" fill="none" stroke="#f1a7c1" stroke-width="7" stroke-linecap="round"></path>
+
+    <!-- Heart decorations -->
+    <g fill="#fff8fb">
+      <path d="M98 155
+               C88 146 77 158 98 172
+               C119 158 108 146 98 155Z"></path>
+      <path d="M160 153
+               C150 144 139 156 160 170
+               C181 156 170 144 160 153Z"></path>
+      <path d="M222 155
+               C212 146 201 158 222 172
+               C243 158 232 146 222 155Z"></path>
+    </g>
+
+    <!-- Bottom frosting -->
+    <path d="M58 183
+             Q78 196 98 184
+             Q118 196 138 184
+             Q158 196 178 184
+             Q198 196 218 184
+             Q238 196 262 183
+             L262 191
+             Q160 220 58 191Z" fill="#fff1f6"></path>
+    <ellipse cx="160" cy="191" rx="102" ry="27" fill="none" stroke="#e78eae" stroke-width="2"></ellipse>
+  </g>
+
+  <!-- Plate -->
+  <ellipse cx="160" cy="221" rx="116" ry="18" fill="#f9e2ec" stroke="#e8b2c7" stroke-width="2"></ellipse>
+  <ellipse cx="160" cy="218" rx="94" ry="10" fill="#fff9fb"></ellipse>
+
+  <!-- Bottom little heart -->
+  <path d="M160 247
+           C147 234 131 250 160 270
+           C189 250 173 234 160 247Z" fill="#dc7fa3"></path>
+</svg>
